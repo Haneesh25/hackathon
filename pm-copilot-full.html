@@ -582,7 +582,7 @@
     <div class="container">
         <div class="header">
             <div>
-                <h1>🚀 PM Copilot</h1>
+                <h1> PM Copilot</h1>
                 <div class="subtitle">Your Agentic Project Management Assistant</div>
             </div>
             <div class="status-indicator">
@@ -594,15 +594,15 @@
         <div class="tabs-container">
             <div class="tab active" data-tab="chat">💬 Chat</div>
             <div class="tab" data-tab="actions">
-                ✅ Actions
+                 Actions
                 <span class="badge" id="actionsBadge">0</span>
             </div>
             <div class="tab" data-tab="alerts">
-                🔔 Alerts
+                 Alerts
                 <span class="badge" id="alertsBadge">0</span>
             </div>
             <div class="tab" data-tab="meetings">
-                📅 Meetings
+                 Meetings
                 <span class="badge" id="meetingsBadge">0</span>
             </div>
             <div class="tab" data-tab="analytics">📊 Analytics</div>
@@ -645,7 +645,7 @@
             <div class="tab-content" id="alertsContent">
                 <div class="content-area">
                     <div class="section-header">
-                        <h2>🔔 Smart Alerts</h2>
+                        <h2> Smart Alerts</h2>
                         <button class="filter-btn" onclick="refreshAlerts()">🔄 Refresh</button>
                     </div>
                     <div id="alertsList"></div>
@@ -656,7 +656,7 @@
             <div class="tab-content" id="meetingsContent">
                 <div class="content-area">
                     <div class="section-header">
-                        <h2>📅 Meetings</h2>
+                        <h2> Meetings</h2>
                         <div class="filter-buttons">
                             <button class="filter-btn active" data-meeting-filter="upcoming">Upcoming</button>
                             <button class="filter-btn" data-meeting-filter="live">Live</button>
@@ -686,17 +686,17 @@
                     </div>
 
                     <div class="chart-container">
-                        <div class="chart-title">📈 Sprint Velocity Trend</div>
+                        <div class="chart-title"> Sprint Velocity Trend</div>
                         <canvas id="velocityChart" height="80"></canvas>
                     </div>
 
                     <div class="chart-container">
-                        <div class="chart-title">😊 Customer NPS Trend</div>
+                        <div class="chart-title"> Customer NPS Trend</div>
                         <canvas id="npsChart" height="80"></canvas>
                     </div>
 
                     <div class="insights-section">
-                        <h3 style="margin-bottom: 16px; color: #1e293b;">💡 AI Insights</h3>
+                        <h3 style="margin-bottom: 16px; color: #1e293b;"> AI Insights</h3>
                         <div id="insightsList"></div>
                     </div>
                 </div>
@@ -826,8 +826,8 @@
                         <span class="badge-tag">${action.source}</span>
                     </div>
                     <div class="card-meta">
-                        <div>👤 ${action.assignee}</div>
-                        <div>📅 ${action.due_date}</div>
+                        <div> ${action.assignee}</div>
+                        <div> ${action.due_date}</div>
                     </div>
                     <div style="color: #475569; line-height: 1.6; margin-bottom: 12px;">
                         ${action.description}
@@ -838,7 +838,7 @@
                                 ✓ Complete
                             </button>
                             <button class="btn-secondary" onclick="snoozeAction('${action.id}')">
-                                ⏰ Snooze
+                                 Snooze
                             </button>
                         ` : '<span style="color: #22c55e; font-weight: 600;">✓ Completed</span>'}
                     </div>
@@ -995,12 +995,12 @@
                     <div class="card-header">
                         <div class="card-title">${meeting.title}</div>
                         <span class="meeting-status ${meeting.status}">
-                            ${meeting.status === 'live' ? '🔴 LIVE' : meeting.status === 'upcoming' ? '📅 UPCOMING' : '✅ COMPLETED'}
+                            ${meeting.status === 'live' ? ' LIVE' : meeting.status === 'upcoming' ? ' UPCOMING' : ' COMPLETED'}
                         </span>
                     </div>
                     <div class="card-meta">
-                        <div>📅 ${meeting.date}</div>
-                        <div>⏰ ${meeting.time}</div>
+                        <div> ${meeting.date}</div>
+                        <div> ${meeting.time}</div>
                         <div>👥 ${meeting.attendees.length} attendees</div>
                     </div>
                     
